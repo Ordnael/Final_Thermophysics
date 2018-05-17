@@ -1,0 +1,13 @@
+Compared to the direct problem, where the inputs are evaluated in order to analize the beahvior of the system, an inverse problem requires a different methodology for the solution, as for complex problems, often involving partial differential equations, there is not a direct solution to be found by rearranging the equations; instead, the basic steps required to approximate to a solution are the following:
+
+\begin{enumerate}
+	\item Set an initial value for the unknowns.
+	\item Solve the direct problem using the proposed values.
+	\item Find the error between the simulated process and the experimental results.
+	\item Search for a different set of proposed values.
+	\item Solve the direct problem and compare until a satisfactory solution is found.
+\end{enumerate}
+
+It is the necessary, for the solution of an inverse problem, to have a set of results to be compared with those of the simulations, so that the search algorithm can propose new values for the inputs until the error between both cases is low enough to consider those values as a solution; in the specific case of heat diffusion processes, the results to be compared take the form of a temperature profile obtained at special points along the tested object, and the objective is then to find the combination of inputs that will yield the same profile.\\
+
+One important input to be found is the temperature dependency of the thermophysical properties, wich requires to find the functional form of the parameter that better reproduces the experimental results; if it is assumed that the function of the temperature dependent property is a polynomial, then the inputs to be looked for are the coefficients. One method devised for such a task is the Bycond method, 
